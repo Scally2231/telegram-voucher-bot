@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: voucher-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: 8442896861:AAEtW4ZqFuKgTSMh5cr_Q9Nt5dYdLRG6wdc
